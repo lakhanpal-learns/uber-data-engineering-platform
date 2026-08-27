@@ -1,0 +1,17 @@
+[project]
+name = "uber-data-engineering-platform"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+authors = [
+    { name = "Lakhanpal", email = "lakhanpal302004@gmail.com" }
+]
+requires-python = ">=3.12"
+dependencies = []
+
+[project.scripts]
+uber-data-engineering-platform = "uber_data_engineering_platform:main"
+
+[build-system]
+requires = ["uv_build>=0.12.5,<0.13.0"]
+build-backend = "uv_build"
