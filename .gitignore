@@ -1,26 +1,15 @@
-.env
-.env.*
-!.env.example
-
+# Python-generated files
 __pycache__/
-*.py[cod]
+*.py[oc]
+build/
+dist/
+wheels/
+*.egg-info
 
-.venv/
-venv/
-env/
+# Virtual environments
+.venv
 
-.ipynb_checkpoints/
-
-.vscode/
-
-.DS_Store
-
-*.log
-
-secrets/
-credentials/
+.env
 
 diagram/
-
 documentation/
-
