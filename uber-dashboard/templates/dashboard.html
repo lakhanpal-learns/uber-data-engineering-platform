@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Uber Analytics Dashboard</title>
+
+    <link rel="stylesheet"
+          href="{{ url_for('static', filename='style.css') }}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <!-- HEADER -->
+
+    <header class="header">
+
+        <div>
+            <h1>Uber Analytics</h1>
+
+            <p>
+                Data Engineering & Analytics Dashboard
+            </p>
+        </div>
+
+        <div class="status">
+            <span class="status-dot"></span>
+            Live Data
+        </div>
+
+    </header>
+
+
+    <!-- KPI CARDS -->
+
+    <section class="kpi-grid">
+
+        <div class="kpi-card">
+
+            <span class="kpi-label">
+                Total Rides
+            </span>
+
+            <strong id="total-rides">
+                --
+            </strong>
+
+        </div>
+
+
+        <div class="kpi-card">
+
+            <span class="kpi-label">
+                Total Revenue
+            </span>
+
+            <strong id="total-revenue">
+                --
+            </strong>
+
+        </div>
+
+
+        <div class="kpi-card">
+
+            <span class="kpi-label">
+                Average Fare
+            </span>
+
+            <strong id="average-fare">
+                --
+            </strong>
+
+        </div>
+
+
+        <div class="kpi-card">
+
+            <span class="kpi-label">
+                Average Rating
+            </span>
+
+            <strong id="average-rating">
+                --
+            </strong>
+
+        </div>
+
+
+        <div class="kpi-card">
+
+            <span class="kpi-label">
+                Total Tips
+            </span>
+
+            <strong id="total-tips">
+                --
+            </strong>
+
+        </div>
+
+
+        <div class="kpi-card">
+
+            <span class="kpi-label">
+                Avg Distance
+            </span>
+
+            <strong id="average-distance">
+                --
+            </strong>
+
+        </div>
+
+    </section>
+
+
+    <!-- MAIN DASHBOARD -->
+
+    <section class="dashboard-grid">
+
+
+        <!-- VEHICLES -->
+
+        <div class="panel">
+
+            <div class="panel-header">
+
+                <div>
+
+                    <h2>
+                        Revenue by Vehicle
+                    </h2>
+
+                    <p>
+                        Performance by vehicle type
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div id="vehicle-data"
+                 class="table-container">
+
+                Loading...
+
+            </div>
+
+        </div>
+
+
+        <!-- PAYMENT -->
+
+        <div class="panel">
+
+            <div class="panel-header">
+
+                <div>
+
+                    <h2>
+                        Payment Methods
+                    </h2>
+
+                    <p>
+                        Revenue by payment method
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div id="payment-data"
+                 class="table-container">
+
+                Loading...
+
+            </div>
+
+        </div>
+
+
+        <!-- CITIES -->
+
+        <div class="panel">
+
+            <div class="panel-header">
+
+                <div>
+
+                    <h2>
+                        Top Cities
+                    </h2>
+
+                    <p>
+                        Highest revenue locations
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div id="city-data"
+                 class="table-container">
+
+                Loading...
+
+            </div>
+
+        </div>
+
+
+        <!-- DRIVERS -->
+
+        <div class="panel">
+
+            <div class="panel-header">
+
+                <div>
+
+                    <h2>
+                        Top Drivers
+                    </h2>
+
+                    <p>
+                        Highest revenue drivers
+                    </p>
+
+                </div>
+
+            </div>
+
+            <div id="driver-data"
+                 class="table-container">
+
+                Loading...
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer>
+
+        <span>
+            Powered by Databricks
+        </span>
+
+        <span>
+            •
+        </span>
+
+        <span>
+            Flask API
+        </span>
+
+        <span>
+            •
+        </span>
+
+        <span>
+            Unity Catalog
+        </span>
+
+    </footer>
+
+</div>
+
+
+<script src="{{ url_for('static', filename='dashboard.js') }}"></script>
+
+</body>
+
+</html>
