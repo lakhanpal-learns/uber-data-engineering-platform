@@ -1,0 +1,4 @@
+Flask
+databricks-sql-connector
+python-dotenv
+gunicorn
